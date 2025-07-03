@@ -13,6 +13,12 @@ public class Exercise_06 {
     public static void main(String[] args) {
 
         // write code here
+        float radius = 3.14f;
+        int height = 5;
+
+        double cylinderVolume;
+        cylinderVolume = 3.14*(radius*radius)*height;
+        System.out.println("volumne of the cylinder is " +cylinderVolume);
 
     }
 }

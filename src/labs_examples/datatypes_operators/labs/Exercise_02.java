@@ -24,6 +24,10 @@ public class Exercise_02 {
     public static void main(String[] args) {
 
         // write code here
+        double myVar = 10.5;
+        int newInteger = (int) myVar;
+        System.out.println("casted integer is " +newInteger);
+
 
     }
 }
