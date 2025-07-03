@@ -1,7 +1,8 @@
 package labs_examples.arrays.labs;
 
+import java.sql.SQLOutput;
 import java.util.Arrays;
-
+import java.util.Scanner;
 /**
  * Arrays calculator
  *
@@ -13,5 +14,17 @@ import java.util.Arrays;
  */
 
 public class Exercise_01 {
-
+    public static void main(String[] args) {
+        Scanner inputScanner = new Scanner(System.in);
+        int[] newArray = new int[10];
+        for (int i=0; i < 10; i++) {
+            System.out.println("Enter number "+i);
+            newArray[i] = inputScanner.nextInt();
+        }
+        int sum = 0;
+        for (int k : newArray) {
+            sum += k;
+        }
+        System.out.println("Sum is "+sum);
+    }
 }

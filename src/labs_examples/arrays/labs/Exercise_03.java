@@ -18,6 +18,17 @@ package labs_examples.arrays.labs;
 public class Exercise_03 {
 
     public static void main(String[] args) {
-        
+        int[][] matrixOne = new int[5][5];
+        for(int i=0; i < 5; i++) {
+            for(int j=0; j<5;j++){
+                matrixOne[i][j] = (i+1)*(j+1)*3;
+            }
+        }
+        for(int i=0; i < 5; i++) {
+            for(int j=0; j< 5;j++){
+                System.out.print(matrixOne[i][j]+" |");
+            }
+            System.out.println();
+        }
     }
 }

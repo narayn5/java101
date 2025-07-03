@@ -1,5 +1,5 @@
 package labs_examples.arrays.labs;
-
+import java.util.Scanner;
 /**
  *  More labs_examples.arrays
  *
@@ -15,6 +15,12 @@ public class Exercise_02 {
         int[] array = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 
         // write code here
+        Scanner inputScanner = new Scanner(System.in);
+
+        System.out.println("Enter an index number");
+        byte indexNumber = inputScanner.nextByte();
+
+        System.out.println("Number in the index of "+indexNumber+" is "+ array[indexNumber]);
 
 
     }
