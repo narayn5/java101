@@ -2,6 +2,8 @@
 Without running the code below, please tell me what will print. Why?
 
 
+reason:
+i think superclass is being called automatically when you create a subclass out of a superclass.
 
 
 public class InheritanceTest
