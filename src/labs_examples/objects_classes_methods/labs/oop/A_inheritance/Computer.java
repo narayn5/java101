@@ -59,7 +59,7 @@ class Laptop extends Desktop {
 
 }
 
-class TouchDevices extends ComputerType {
+class TouchDevices extends Desktop {
     boolean touchScreenEnabled;
     public TouchDevices() {
         super();
@@ -68,6 +68,11 @@ class TouchDevices extends ComputerType {
     public TouchDevices(int numberOfKeys, boolean externalMouse, boolean touchScreen) {
         super(numberOfKeys, externalMouse);
         this.touchScreenEnabled = touchScreen;
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("click click... Android Logo! Click click...");
     }
 }
 
@@ -81,6 +86,7 @@ class Tablets extends TouchDevices {
         super(numberOfKeys, externalMouse, TouchScreen);
         this.screenSize = screenSize;
     }
+
 }
 
 class SmartPhones extends TouchDevices {
@@ -103,6 +109,11 @@ class SmartPhones extends TouchDevices {
                 ", externalMouse=" + externalMouse +
                 '}';
     }
+
+    @Override
+    public void turnOn() {
+        System.out.println("No clicks and beeps;\njust One press and- \nhere is your home screen!");
+    }
 }
 
 public class Computer {
@@ -118,5 +129,6 @@ public class Computer {
 
         SmartPhones iPhone = new SmartPhones(0,false, true, true);
         System.out.println(iPhone.toString());
+        iPhone.turnOn();
     }
 }
