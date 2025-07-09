@@ -1,6 +1,6 @@
 package labs_examples.objects_classes_methods.labs.oop.B_polymorphism;
 
-public interface AirplaneConfig() {
+public interface AirplaneConfig {
     public void Engine();
     public void FlightInfo();
     public boolean longRange();
